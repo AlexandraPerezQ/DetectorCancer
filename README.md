@@ -21,8 +21,6 @@ j) dimensión fractal ("aproximación a la línea de costa" - 1)
 La media, el error estándar y el "peor" o mayor (media de los tres valores más grandes) de estas características se calcularon para cada imagen,
 resultando en 30 características. Por ejemplo, el campo 3 es Radio medio, campo 13 es Radius SE, el campo 23 es Worst Radius.
 
-Todos los valores de características se recodifican con cuatro dígitos significativos.
-
 Se cambia M por -1 y B por 1 , para los datos de training y test. 
 
 Se utiliza 5 modelos para la deteccion, los parametros de evaluacion seran la Exactitud y la Sensibilidad pues esta metrica indica la capacidad de poder detectar correctamente la enfermedad entre los enfermos.
@@ -34,4 +32,4 @@ Con SVM se tiene exatitud del 92% y sensibilidad del 94%
 
 Basado en los resultados se selecciona el mejor modelo de exactitud y sensibilidad que corresponde al RandomForestClassifier con 95% en ambos parametros considerando que estamos detectando una enfermedad la sensibilidad alcanza un 95% que indica la capacidad de poder detectar correctamente la enfermedad entre los enfermos.
 
-Adicionalmente se realiza tambien validacion cruzada para verificar que la exactitud del modelo no tienda a solo datos del train sino una evaluacion en 10 veces con diferentes datos de la data y se alcanza el 96% con el modelo elegido  RandomForestClassifier. 
+Adicionalmente se realiza tambien validacion cruzada para verificar que la exactitud del modelo no tienda a solo a cierto datos del train sino una evaluacion en 10 veces con diferentes datos de la data y se alcanza el 96% con el modelo elegido  RandomForestClassifier. 
